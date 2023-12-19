@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  trcmobile_httpd:
+    image: httpd
+    restart: always
+    volumes:
+      - .:/usr/local/apache2/htdocs/
+    ports:
+      - 80:80
+      - 443:443
